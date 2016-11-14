@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">	
+	<h1>基本实例</h1>
+	<p>单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的<code> &ltinput&gt、&lttextarea&gt 和 &ltselect&gt</code>元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。</p>
+	<form>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox"> Check me out
+			</label>
+		</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+	<h1>内联表单</h1>
+	<p>为 <code>&ltform&gt</code> 元素添加 .form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）。</p>
+	<p><mark>因为默认样式为form-control，其input、select和textarea的宽度为100%，
+            所以使用内联时，需单独对输入控件设置width或在外面再加上一层带有.form-group
+            的div元素</mark></p>
+            	<p><mark>输入控件必须设置label属性，如果不想显示label属性，可将其设为sr-only</mark></p>
+	<form class="form-inline">
+		<div class="form-group">
+			<label class="sr-only"></label>
+			<input type="email" class="form-control"  placeholder="Enter email">
+		</div>
+		<div class="form-group">
+			<label class="sr-only">Password</label>
+			<input type="password" class="form-control"  placeholder="Password">
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox"> Check me out
+			</label>
+		</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+	<h1>水平排列的表单</h1>
+	<p></p>
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label for="exampleInputEmail1" class="col-lg-2">Email address</label>
+			<div class="col-lg-10">
+				<input type="email" class="form-control " id="exampleInputEmail1" placeholder="Enter email">			
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1" class="col-lg-2">Password</label>
+			<div class="col-lg-10">
+				<input type="password" class="form-control "  id="exampleInputPassword1" placeholder="Password">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="checkbox  col-lg-offset-2 col-lg-10">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>		
+		</div>
+		<div class="form-group ">
+			<div class="col-lg-offset-2 col-lg-10">
+				<button type="submit" class="btn btn-default">Submit</button>	
+			</div>
+		</div>
+	</form>
+	<h1>被支持的控件</h1>
+	<h2>输入框</h2>
+	<p>只有正确设置了 type 属性的输入控件才能被赋予正确的样式。</p>
+	<div>		
+		<input type="email" class="form-control" placeholder="Enter email">		
+	</div>
+	<h2>文本域</h2>
+	<p>.rows可定义高度，.cols定义宽度。但如果应用了.form-control时，则cols属性不起作用</p>
+	<div>
+		<textarea class="form-control" cols="1" rows="3" placeholder="应用.form-control"></textarea> 
+		<textarea cols="1"  rows="3"></textarea> 
+	</div>
+	<h2>单选和多选</h2>
+	<h3>内联单选和多选框</h3>
+	<p>通过将 .checkbox-inline 或 .radio-inline 类应用到一系列的多选框（checkbox）或单选框（radio）控件上，可以使这些控件排列在一行。</p>
+	<label class="checkbox-inline">
+		<input type="checkbox"  value="option1"> 1
+	</label>
+	<label class="checkbox-inline">
+		  <input type="checkbox"  value="option2"> 2
+	</label>
+	<label class="checkbox-inline">
+		  <input type="checkbox"  value="option3"> 3
+	</label>
+	<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions" value="option1"> 1
+	</label>
+	<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions" value="option2"> 2
+	</label>
+	<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions"  value="option3"> 3
+	</label>
+	<h1>静态控件</h1>
+	<p>如果需要在表单中将一行纯文本和 label 元素放置于同一行，为 <code>&ltp&gt</code> 元素添加 .form-control-static 类即可。</p>
+	<form class="form-horizontal" role="form">
+ 		 <div class="form-group">
+    			<label class="col-sm-2 control-label">Email</label>
+    			<div class="col-sm-10">
+      				<p class="form-control-static">email@example.com</p>
+   		 	</div>
+  		</div>
+	</form>
+	<h1>焦点状态</h1>
+	<p>某些表单控件的默认 outline 样式移除，然后对 :focus 状态赋予 box-shadow 属性。</p>
+	<form>
+		<div class="form-group">
+			<label class="sr-only"></label>
+			<input type="text" class="form-control">
+		</div>
+	</form>
+	<h1>被禁用的输入框</h1>
+	<p>为输入框设置 disabled 属性可以防止用户输入，并能对外观做一些修改，使其更直观</p>
+	<form>
+		<div class="form-group">
+			<label class="sr-only"></label>
+			<input type="text" class="form-control" disabled>
+		</div>
+	</form>
+	<h1>只读输入框</h1>
+	<p>输入框设置 readonly 属性可以禁止用户输入，并且输入框的样式也是禁用状态。</p>
+	<form>
+		<div class="form-group">
+			<label class="sr-only"></label>
+			<input type="text" class="form-control" readonly placeholder="只能读">
+		</div>
+	</form>
+	<h1>校验状态</h1>
+	<p>Bootstrap 对表单控件的校验状态，如 error、warning 和 success 状态，都定义了样式。使用时，添加 .has-warning、.has-error 或 .has-success 类到这些控件的父元素即可。任何包含在此元素之内的 .control-label、.form-control 和 .help-block 元素都将接受这些校验状态的样式。</p>
+	<div class="form-group has-success">
+		  <label class="control-label" for="inputSuccess1">Input with success</label>
+		  <input type="text" class="form-control" id="inputSuccess1">
+	</div>
+	<div class="has-success">
+	  <div class="checkbox">
+	    <label>
+	      <input type="checkbox" id="checkboxSuccess" value="option1">
+	      Checkbox with success
+	    </label>
+	  </div>
+	</div>
+	<h1>添加额外的图标</h1>
+	<p>你还可以针对校验状态为输入框添加额外的图标。只需设置相应的 .has-feedback 类并添加正确的图标即可。</p>
+	<div class="form-group has-success has-feedback">
+		  <label class="control-label" for="inputSuccess2">Input with success</label>
+		  <input type="text" class="form-control" id="inputSuccess2">
+		  <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+	</div>
+	<h1>辅助文本</h1>
+	<p>针对表单控件的“块（block）”级辅助文本。</p>
+	<div class="form-group">
+		<label class="sr-only"></label>
+		<input type="text" class="form-control" >
+		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>	
+	</div>
+</div>
+</body>
+</html>
