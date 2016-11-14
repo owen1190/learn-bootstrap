@@ -3,9 +3,7 @@
 ## 目录
 
 1. 全局css样式
-
-2. [组件]: https://github.com/owen1190/learn-bootstrap/tree/master/2.%E7%BB%84%E4%BB%B6
-
+2. [组件](https://github.com/owen1190/learn-bootstrap/tree/master/2.%E7%BB%84%E4%BB%B6)
 3. JavaScript插件
 
 
