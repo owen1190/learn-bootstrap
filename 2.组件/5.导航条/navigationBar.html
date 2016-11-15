@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	    <style type="text/css">
+	    	body {
+	    		padding-top: 70px;
+	    		padding-bottom: 70px;
+	    	}
+	    </style>
+    </head>
+    <body>
+    <div class="container">
+	<h1>默认样式导航条</h1>
+	<p>首先在普通导航的ul元素上应用.navbar-nav，然后在外部父元素容器上应用.navbar-header以及.navbar-default</p>
+	<p>.navbar-brand表示该元素是导航条的名称，起到提醒的目的</p>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Brand</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+	</nav>
+	<h1>表单</h1>
+	<p>在.navbar容器中放置form元素，然后在form元素上应用.navbar-form,同时使用.navbar-left和.navbar-right，以便控制左右对齐</p>
+	<nav class="navbar navbar-default">		
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">Brand</a>
+		</div>
+		<form class="navbar-form navbar-left">
+			<div class="form-group">
+				<input type="text" class="form-control">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>		
+	</nav>
+	<h1>按钮，文本，链接</h1>
+	<p>导航中也可以使用按钮(navbar-btn)、文本(navbar-text)及链接(navbar-link)。</p>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header"><a href="#" class="navbar-brand">Brand</a></div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+		<button class="btn btn-default navbar-btn" type="submit">submit</button>
+	</nav>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header"><a href="#" class="navbar-brand">Brand</a></div>
+		<div class="nav navbar-nav">
+			<p class="navbar-text">Welcome to <a href="#" class="navbar-link" >home</a></p>
+
+		</div>
+	</nav>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header"><a href="#" class="navbar-brand">Brand</a></div>
+		<div class="nav navbar-nav">
+			<button class="navbar-btn">button1</button>
+			<button class="navbar-btn">button2</button>
+			<button class="navbar-btn">button3</button>
+		</div>
+	</nav>
+	<h1>组件排列</h1>
+	<p>通过添加 .navbar-left 和 .navbar-right 工具类让导航链接、表单、按钮或文本对齐。</p>
+	
+	<h1>固定在顶部</h1>
+	<p>添加 .navbar-fixed-top 类可以让导航条固定在顶部，还可包含一个 .container 或 .container-fluid 容器，从而让导航条居中，并在两侧添加内部（padding）</p>
+	<mark>因为body是从最顶部开始，而.navbar-fixed-top的z-index覆盖在上面，所以需要将body的padding-top设为70px；才能避免被.navbar-fixed-top覆盖</mark>	
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-header"><a href="#" class="navbar-brand">Brand</a></div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+		<p class="navbar-text">固定在顶部的导航条</p>
+	</nav>
+	<h1>固定在底部</h1>
+	<p>添加 .navbar-fixed-bottom 类可以让导航条固定在底部，并且还可以包含一个 .container 或 .container-fluid 容器，从而让导航条居中，并在两侧添加内部（padding）。</p>
+	<mark>需要将body的padding-bottom设为70px；才能避免被.navbar-fixed-bottom覆盖</mark>
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="navbar-header"><a href="#" class="navbar-brand">Brand</a></div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+		<p class="navbar-text">固定在底部的导航条</p>
+	</nav>
+	<h1>静止在顶部</h1>
+	<p>通过添加 .navbar-static-top 类即可创建一个与页面等宽度的导航条，它会随着页面向下滚动而消失。还可以包含一个 .container 或 .container-fluid 容器，用于将导航条居中对齐并在两侧添加内部（padding）。</p>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="navbar-header"><a href="#" class="navbar-brand">Brand</a></div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+		<p class="navbar-text">静止在顶部的导航条</p>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1>反色的导航条</h1>
+	<p>通过添加 .navbar-inverse 类可以改变导航条的外观。</p>
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header"><a href="#" class="navbar-brand">Brand</a></div>
+		<ul class="nav navbar-nav">
+			<li><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+	</nav>
+    </div>
+    </body>
+</html>

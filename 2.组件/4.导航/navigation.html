@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>navigation</title>
+	 <!-- 新 Bootstrap 核心 CSS 文件 -->
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<h1>标签页</h1>
+	<div>
+		<ul class="nav  nav-tabs ">
+			<li class="active"><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+	</div>
+	<h1>胶囊式标签页</h1>
+	<div>
+		<ul class="nav  nav-pills">
+			<li class="active"><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+	</div>
+	<p>胶囊是标签页也是可以垂直方向堆叠排列的。只需添加 .nav-stacked 类。</p>
+	<div class="row">
+		<div class="col-lg-3">
+			<ul class="nav  nav-pills nav-stacked">
+				<li class="active"><a href="#">a</a></li>
+				<li><a href="#">b</a></li>
+				<li><a href="#">c</a></li>
+			</ul>	
+		</div>
+	</div>
+	<h1>两端对齐的标签页</h1>
+	<p></p>
+	<div>
+		<ul class="nav  nav-tabs  nav-justified">
+			<li class="active"><a href="#">a</a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>
+		<br>
+		<br>
+		<ul class="nav  nav-pills nav-justified">
+				<li class="active"><a href="#">a</a></li>
+				<li><a href="#">b</a></li>
+				<li><a href="#">c</a></li>
+		</ul>	
+	</div>
+	<h1>禁用的链接</h1>
+	<p>对任何导航组件（标签页、胶囊是标签页），都可以添加 .disabled 类，从而实现链接为灰色且没有鼠标悬停效果。</p>
+	<div>
+		<ul class="nav  nav-tabs ">
+				<li class="active"><a href="#">a</a></li>
+				<li class="disabled"><a href="#">b</a></li>
+				<li><a href="#">c</a></li>
+		</ul>	
+	</div>
+	<h1>带下拉菜单的标签页</h1>
+	<div>
+		<ul class="nav  nav-tabs ">
+				<li class="active"><a href="#">a</a></li>
+				<li ><a href="#">b</a></li>
+				<li>
+					<a class=" dropdown-toggle" data-toggle="dropdown">	action
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">a</a></li>
+						<li><a href="#">b</a></li>
+						<li><a href="#">c</a></li>
+					</ul>
+				</li>
+		</ul>	
+	</div>
+	<h1>带下拉菜单的胶囊式标签页</h1>
+	<div>
+		<ul class="nav  nav-pills">
+				<li class="active"><a href="#">a</a></li>
+				<li ><a href="#">b</a></li>
+				<li>
+					<a class=" dropdown-toggle" data-toggle="dropdown">	action
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">a</a></li>
+						<li><a href="#">b</a></li>
+						<li><a href="#">c</a></li>
+					</ul>
+				</li>
+		</ul>	
+	</div>
+</div>
+</body>
+</html>
