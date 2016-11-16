@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>        
+    </head>
+<body>
+<div class="container">
+	<h1>分页</h1>
+	<h2>默认样式</h2>
+	<p>在ul元素上应用.pagination</p>
+	<ul class="pagination">
+		<li><a href="#">&laquo</a></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li ><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">&raquo</a></li>
+	</ul>
+	<h2>禁用和激活状态</h2>
+	<p>对于分页导航，也提供了.disabled和.active。但是即便应用了这两种状态，也阻止不了单击效果，所以一般在li元素中使用span元素</p>
+	<ul class="pagination">
+		<li class="disabled"><span>&laquo</span></li>
+		<li class="active"><span>1</span></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">&raquo</a></li>
+	</ul>
+	<h2>尺寸</h2>
+	<p>.pagination-lg 或 .pagination-sm 类提供了额外可供选择的尺寸</p>
+	<ul class="pagination pagination-sm">
+		<li class="disabled"><span>&laquo</span></li>
+		<li class="active"><span>1</span></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">&raquo</a></li>
+	</ul>
+	<h1>翻页</h1>
+	<h2>默认样式</h2>
+	<p>ul上应用.pager，链接居中对齐。</p>
+	<ul class="pager">
+		<li><a href="#">前一页</a></li>
+		<li><a href="#">后一页</a></li>
+	</ul>
+	<h2>对齐链接</h2>
+	<p>将两个按钮连接，分别进行左右对齐，则需要在按钮的li上应用.previous和.next</p>
+	<ul class="pager">
+		<li class="previous disabled"><span>前一页</span></li>
+		<li class="next"><a href="#">后一页</a></li>
+	</ul>
+	<blockquote>也可以应用.disabled，且如果需要禁用单件功能，则也可以换成span元素。</blockquote>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.spanInline span {
+			display: inline-block;
+		}
+	</style>
+    </head>
+<body>
+<div class="container">
+	<h1>标签</h1>
+	<h2>实例</h2>
+	<p>一般用于高亮一些标题里的特殊字符或者整个字符，提供.label用于实现此功能。提供了多种颜色的支持。</p>
+	<h1>Example heading <span class="label label-default">New</span></h1>
+	<h1>Example heading <span class="label label-primary">New</span></h1>
+	<h1>Example heading <span class="label label-success">New</span></h1>
+	<h1>Example heading <span class="label label-warning">New</span></h1>
+	<h1>Example heading <span class="label label-danger">New</span></h1>
+	<h1>Example heading <span class="label label-info">New</span></h1>	
+	<p>.label作用在链接上，hover和focus时背景颜色会加深。</p>
+	<a href="#" class="label label-default">New</a>
+	<p>如果你有大量的设置为 inline 属性的标签全部放在一个较窄的容器元素内,做法是为每个标签都设置为 display: inline-block; 属性</p>
+	<div class="spanInline">
+		<span class="label label-default">New</span>
+		<span class="label label-primary">New</span>
+		<span class="label label-success">New</span>
+		<span class="label label-warning">New</span>
+		<span class="label label-danger">New</span>
+		<span class="label label-info">New</span>
+	</div>
+</div>
+ </body>
+</html>
