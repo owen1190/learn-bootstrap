@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body  {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	</style>
+    </head>
+<body>
+<div class="container">
+	<h1>预定义样式</h1>
+	<button type="button" class="btn btn-default">Default</button>
+	<button type="button" class="btn btn-primary">Primary</button>	
+	<button type="button" class="btn btn-success">Success</button>	
+	<button type="button" class="btn btn-info">Info</button>	
+	<button type="button" class="btn btn-warning">Warning</button>	
+	<button type="button" class="btn btn-danger">Danger</button>	
+	<button type="button" class="btn btn-link">Link</button>
+	<h1>尺寸</h1>
+	<p>.btn-lg、.btn-sm 或 .btn-xs 可以获得不同尺寸的按钮</p>	
+	<button type="button" class="btn btn-primary btn-lg">Large button</button>		
+	<button type="button" class="btn btn-primary">Default button</button>
+	<button type="button" class="btn btn-primary btn-sm">Small button</button>
+	<button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+	<p>通过给按钮添加 .btn-block 类可以将其拉伸至父元素100%的宽度，而且按钮也变为了块级（block）元素。</p>
+	<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+	<h1>激活状态</h1>
+	<p>对于 &ltbutton&gt元素，是通过 :active 状态实现的。对于 &lta&gt 元素，是通过 .active 类实现的</p>
+	<h2>button元素</h2>
+	<p>由于 :active 是伪状态，因此无需额外添加，但是在需要让其表现出同样外观的时候可以添加 .active 类。</p>
+	<button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+	<h2>a元素</h2>
+	<p>可以为基于 &lta&gt 元素创建的按钮添加 .active 类。</p>
+	<a href="#" class="btn btn-primary  active">Primary link</a>
+	<h1>禁用状态</h1>
+	<h2>button</h2>
+	<p>为 &ltbutton%gt 元素添加 disabled 属性，使其表现出禁用状态。</p>
+	<button type="button" class="btn btn-primary btn-lg " disabled>Primary button</button>
+	<h1>a元素</h1>
+	<p>为基于 &lta&gt 元素创建的按钮添加 .disabled 类。</p>
+	<a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+	<h1>按钮类</h1>
+	<p>为 a、button 或 input 元素应用按钮类。</p>
+	<a class="btn btn-default" href="#" >Link</a>
+	<button class="btn btn-default" type="submit">Button</button>
+	<input class="btn btn-default" type="button" value="Input">
+</div>	
+</body>
+</html>

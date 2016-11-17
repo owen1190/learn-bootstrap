@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>badge</title>
+	<meta charset="utf-8">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {
+			padding-top: 70px;
+		}
+	</style>
+</head>
+<body>
+<div  class="container">
+		<p>给链接、导航等元素嵌套 &ltspan class="badge"&gt 元素，可以很醒目的展示新的或未读的信息条目。</p>
+		<a href="#">Inbox<span class="badge">42</span></a>	
+		<br>
+		<br>
+		<button class="btn btn-primary" type="button">Message<span class="badge">15</span></button>
+		<br>
+		<br>
+		<br>
+		<p>如果.badge应用样式内部无内容时，样式会自动消失（通过CSS的empty选择器实现）</p>
+		<button class="btn btn-primary" type="button">Message<span class="badge"></span></button>
+		<p>也可以应用于list-group-item和nav-pills中</p>
+		<ul class="nav nav-pills ">
+			<li><a href="#">a<span class="badge">10</span></a></li>
+			<li><a href="#">b</a></li>
+			<li><a href="#">c</a></li>
+		</ul>		
+</div>
+</body>
+</html>

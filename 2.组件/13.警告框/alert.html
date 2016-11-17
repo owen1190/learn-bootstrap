@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>alert</title>
+	<meta charset="utf-8">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<h1>实例</h1>
+	<p>将任意文本和一个可选的关闭按钮组合在一起就能组成一个警告框，.alert 类是必须要设置的，另外我们还提供了有特殊意义的4个类（例如，.alert-success），代表不同的警告信息</p>
+	<div class="alert alert-success">		
+		<p>Well done! You successfully read this important alert message.</p>
+	</div>
+	<div class="alert alert-info">		
+		<p>Heads up! This alert needs your attention, but it's not super important.</p>
+	</div>
+	<div class="alert alert-warning alert-dismissible">		
+		<p>Warning! Better check yourself, you're not looking too good.</p>
+	</div>
+	<div class="alert alert-danger">		
+		<p>Oh snap! Change a few things up and try submitting again.</p>
+	</div>
+	<h1>可关闭的警告框</h1>
+	<p>为警告框添加一个可选的 .alert-dismissible(也可以是.alert-dismissable) 类和一个data-dismiss="alert"属性的按钮。</p>
+	<div class="alert alert-success alert-dismissible">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<p>Well done! You successfully read this important alert message.</p>
+	</div>
+	<div class="alert alert-info alert-dismissible">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<p>Heads up! This alert needs your attention, but it's not super important.</p>
+	</div>
+	<div class="alert alert-warning alert-dismissible">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<p>Warning! Better check yourself, you're not looking too good.</p>
+	</div>
+	<div class="alert alert-danger alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<p>Oh snap! Change a few things up and try submitting again.</p>
+	</div>
+	<h1>警告框中的链接</h1>
+	<p>用 .alert-link 工具类，可以为链接设置与当前警告框相符的颜色。</p>
+	<div class="alert alert-success">		
+		<p>Well done! You successfully read <a href="#" class="alert-link">this important alert message.</a></p>
+	</div>
+	<div class="alert alert-info">		
+		<p>Heads up! <a href="#" class="alert-link">This alert</a> needs your attention, but it's not super important.</p>
+	</div>
+	<div class="alert alert-warning alert-dismissible">		
+		<p>Warning! Better check yourself, you're not <a href="#" class="alert-link">looking too good.</a></p>
+	</div>
+	<div class="alert alert-danger">		
+		<p>Oh snap! Change a few things up and try <a href="#" class="alert-link">submitting again.</a></p>
+	</div>
+</div>
+</body>
+</html>

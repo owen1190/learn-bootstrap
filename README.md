@@ -12,4 +12,8 @@
 1. 每个目录中含有多个子目录，子目录中含有一个`.html`源码文件和一个`png`效果文件。
 2. 每个源码文件中，通过`<h1>`分隔成各个部分。`<p>`讲解使用方法。
 
+## 参考材料
+[BootStrap中文文档](http://v3.bootcss.com/getting-started/)
+
+[w3school](http://w3schools.bootcss.com/default.html)
    ​
