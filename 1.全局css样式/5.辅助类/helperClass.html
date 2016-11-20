@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+    <div class="container">
+    	<h1>上下文颜色</h1>
+    	<p class="text-muted">hello world</p>
+	<p class="text-primary">hello world</p>
+	<p class="text-success">hello world</p>
+	<p class="text-info">hello world</p>
+	<p class="text-warning">hello world</p>
+	<p class="text-danger">hello world</p>
+	<h1>上下文背景</h1>
+	<p class="bg-primary">hello world</p>
+	<p class="bg-success">hello world</p>
+	<p class="bg-info">hello world</p>
+	<p class="bg-warning">hello world</p>
+	<p class="bg-danger">hello world</p>
+	<h1>关闭按钮</h1>
+	<button type="button" class="close">&times;</button>
+	<br>
+	<a class="close" >&times;</a>
+	<h1>向下箭头</h1>
+	<p>提供一个caret样式，直接作用在span上应用</p>
+	<span class="caret"> </span>
+	<h1>内容浮动</h1>
+	<h2>左右浮动</h2>
+	<p>使用.pull-right和.pull-left。</p>
+	<div class="pull-right">abcdefghijklmnopqrstuvwxyz（右浮动）</div>
+	<div class="pull-left">abcdefghijklmnopqrstuvwxyz（左浮动）</div>
+	<br>
+	<h2>居中对齐</h2>
+	<p>使用.center-block</p>
+	<div class="center-block">abcdefghijklmnopqrstuvwxyz（居中对齐）</div>
+	<h1>清除浮动</h1>
+	<p>某个元素浮动后，在紧接着元素使用之前可以清除浮动，避免布局错乱，清除浮动使用.clearfix</p>
+	<div class="pull-right">abcdefghijklmnopqrstuvwxyz（右浮动）</div>
+	<div class="clearfix"></div>
+	<div class="pull-left">abcdefghijklmnopqrstuvwxyz（左浮动）</div>
+	<div class="clearfix"></div>
+	<div class="center-block">abcdefghijklmnopqrstuvwxyz（居中对齐）</div>
+	<h1>隐藏与显示</h1>
+	<p>.show用于显示元素的，.hide表示元素既不显示，也不占用文档流，.invisible表示不显示，但占用文档流</p>
+	<p>abcdefghijklm<p class="hide">nopqrs</p>tuvwxyz</p>
+	<br>
+	<p>abcdefghijklm<p class="invisible">nopqrs</p>tuvwxyz</p>
+	<br>
+	<br>
+	<p>如果一个元素对所有设备都要隐藏，只对盲人使用可用，可用sr-only样式</p>
+	<div>abcdefghijklmn<span class="sr-only">opqrs</span>tuvwxyz(缺少opqrs)</div>
+	<p>让元素文本内容不显示，只显示背景效果，可用.text-hide</p>
+	<div >abcdefghijklmn<p class="text-hide">opqrs</p>tuvwxyz(缺少opqrs)</div>
+    </div>
+    </body>
+</html>

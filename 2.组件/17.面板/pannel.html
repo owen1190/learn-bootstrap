@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pannel</title>
+	<meta charset="utf-8">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>基本实例</h1>
+	<p>在div上应用 panel，产生一个具有边框的文本显示框</p>
+	<div class="panel panel-default">
+		<div class="panel-body">
+		    Basic panel example
+		</div>
+	</div>
+	<h1>带标题的面板</h1>
+	<p>通过 .panel-heading 可以很简单地为面板加入一个标题容器。你也可以通过添加设置了 .panel-title 类的 &lth1&gt-&lth6&gt 标签，添加一个预定义样式的标题。</p>
+	<p>为了给链接设置合适的颜色，务必将链接放到带有 .panel-title 类的标题标签内。</p>
+	<div class="panel panel-default">
+		  <div class="panel-heading"><a href="#">Panel heading without title</a></div>
+		  <div class="panel-body">
+		    Panel content
+		  </div>
+	</div>
+
+	<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title"><a href="#">Panel title</a></h3>
+		  </div>
+		  <div class="panel-body">
+		    Panel content
+		    </div>
+	</div>
+	<h1>多彩面板</h1>
+	<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h3 class="panel-title"><a href="#">Panel title</a></h3>
+		  </div>
+		  <div class="panel-body">
+		    Panel content
+		    </div>
+	</div>
+	<div class="panel panel-success">
+		  <div class="panel-heading">
+		    <h3 class="panel-title"><a href="#">Panel title</a></h3>
+		  </div>
+		  <div class="panel-body">
+		    Panel content
+		    </div>
+	</div>
+	<div class="panel panel-info">
+		  <div class="panel-heading">
+		    <h3 class="panel-title"><a href="#">Panel title</a></h3>
+		  </div>
+		  <div class="panel-body">
+		    Panel content
+		    </div>
+	</div>
+	<div class="panel panel-warning">
+		  <div class="panel-heading">
+		    <h3 class="panel-title"><a href="#">Panel title</a></h3>
+		  </div>
+		  <div class="panel-body">
+		    Panel content
+		    </div>
+	</div>
+	<div class="panel panel-danger">
+		  <div class="panel-heading">
+		    <h3 class="panel-title"><a href="#">Panel title</a></h3>
+		  </div>
+		  <div class="panel-body">
+		    Panel content
+		    </div>
+	</div>
+	<h1>带表格的面板</h1>
+	<p>如果是带有 .panel-body 的面板，会为表格的上方添加一个边框，看上去有分隔效果。</p>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			panel-heading
+		</div>
+		<div class="panel-body">
+			<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john@example.com</td>
+				</tr>
+				<tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@example.com</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p>如果没有 .panel-body ，面版标题会和表格连接起来，没有空隙。</p>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			panel-heading
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john@example.com</td>
+				</tr>
+				<tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@example.com</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h1>带有列表组的面板</h1>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			panel-heading
+		</div>
+		<div class="panel-body">
+			<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		</div>
+		<ul class="list-group">
+			  <li class="list-group-item">Cras justo odio</li>
+			  <li class="list-group-item">Dapibus ac facilisis in</li>
+			  <li class="list-group-item">Morbi leo risus</li>
+			  <li class="list-group-item">Porta ac consectetur ac</li>
+			  <li class="list-group-item">Vestibulum at eros</li>
+		</ul>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

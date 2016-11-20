@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>listgroup</title>
+	<meta charset="utf-8">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>基础列表组</h1>
+	<p>一般由无序/有序列表完成，列表组中的每一项设为.list-group-item</p>
+	<ul class="list-group">
+		  <li class="list-group-item">Cras justo odio</li>
+		  <li class="list-group-item">Dapibus ac facilisis in</li>
+		  <li class="list-group-item">Morbi leo risus</li>
+		  <li class="list-group-item">Porta ac consectetur ac</li>
+		  <li class="list-group-item">Vestibulum at eros</li>
+	</ul>
+	<h1>应用徽章标记箭头</h1>
+	<p>给列表组加入徽章组件，它会自动被放在右边。</p>
+	<ul class="list-group">
+		  <li class="list-group-item">Cras justo odio<span class="badge">12</span></li>
+		  <li class="list-group-item">Dapibus ac facilisis in</li>
+		  <li class="list-group-item"><span class="badge">12</span>Morbi leo risus</li>
+		  <li class="list-group-item">Porta ac consectetur ac</li>
+		  <li class="list-group-item">Vestibulum at eros</li>
+	</ul>
+	<h1>可链接的列表组</h1>
+	<p>用 %lta&gt标签代替 &ltli&gt 标签可以组成一个全部是链接的列表组（还要注意的是，我们需要将 %ltul&gt标签替换为 &ltdiv&gt标签）</p>
+	<p>添加.active会使列表组项高亮显示，而添加 .disabled 类可以让单个条目显示为灰色，表现出被禁用的效果。</p>
+	<div class="list-group">
+		<a href="#" class="list-group-item active">Cras justo odio<span class="badge">4</span></a>
+		<a href="#" class="list-group-item">Dapibus ac facilisis in<span class="badge">2</span></a>
+		<a href="#" class="list-group-item disabled">Porta ac consectetur ac</a>
+		<a href="#" class="list-group-item">Vestibulum at eros</a>
+	</div>
+	<h1>多彩列表项</h1>
+	<ul class="list-group">
+		  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+		  <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+		  <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+		  <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+	</ul>
+	<div class="list-group">
+		  <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+		  <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+		  <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+		  <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+	</div>
+	<h1>定制列表组</h1>
+	<p>提供list-group-item-heading、list-group-item-text分别用于表示列表项条目的头部和主要内容</p>
+	<ul class="list-group">
+		  <li class="list-group-item">
+		  	<h4 class="list-group-item-heading">list-group-item-heading</h4>
+		  	<p class="list-group-item-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus</p>
+		  </li>
+		  <li class="list-group-item">
+		  	<h4 class="list-group-item-heading">list-group-item-heading</h4>
+		  	<p class="list-group-item-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus</p>
+		  </li>
+		  <li class="list-group-item">
+			<h4 class="list-group-item-heading">list-group-item-heading</h4>
+		  	<p class="list-group-item-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus</p>
+		  </li>
+		
+	</ul>
+</div>
+</body>
+</html>
