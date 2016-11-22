@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h2>data用法</h2>
+	<p>使用data-toggle="dropdown"</p>
+	<ul class="nav nav-tabs">
+		<li><a href="#">a</a></li>
+		<li>
+			<a  class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+				b<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">ba</a></li>
+				<li><a href="#">bc</a></li>
+				<li><a href="#">bd</a></li>
+			</ul>
+		</li>
+		<li><a href="#">c</a></li>
+	</ul>
+	<h2>js用法</h2>
+	<p>使用dropdown()函数</p>
+	<mark>无论你使用的是js或者data接口，data-toggle="dropdown"都是必须存在的。</mark>
+	<ul class="nav nav-tabs">
+		<li><a href="#">a</a></li>
+		<li>
+			<a  class="dropdown-toggle1" data-toggle="dropdown" data-target="#">
+				b<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="#">ba</a></li>
+				<li><a href="#">bc</a></li>
+				<li><a href="#">bd</a></li>
+			</ul>
+		</li>
+		<li><a href="#">c</a></li>
+	</ul>
+	<script type="text/javascript">
+		$(function () {
+			$(".dropdown-toggle1").dropdown();			
+		});		
+	</script>
+</div>
+</body>
+</html>

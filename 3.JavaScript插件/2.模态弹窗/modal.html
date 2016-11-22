@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modal</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>实例</h1>
+	<p>使用3层div容器元素，分别应用了modal、modal-dialog和modal-content。其中modal-content包含modal-header、modal-body和modal-footer</p>
+	 <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+
+	<div class="modal " id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">modal-title</h4>				
+				</div>
+				<div class="modal-body">
+					<p>.................................</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" type="button" data-dismiss="modal">close</button>
+					<button class="btn btn-primary" type="button">submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h1>大小</h1>
+	<p>模态框提供了两个可选尺寸modal-lg和modal-sm，通过为 .modal-dialog 增加一个样式调整类实现。</p>
+	<button type="button" data-toggle="modal" data-target="#myModallg">Launch modal-lg</button>
+	<div class="modal " id="myModallg">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">modal-title</h4>				
+				</div>
+				<div class="modal-body">
+					<p>.................................</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" type="button" data-dismiss="modal">close</button>
+					<button class="btn btn-primary" type="button">submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button type="button" data-toggle="modal" data-target="#myModalsm">Launch modal-sm</button>
+	<div class="modal " id="myModalsm">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">modal-title</h4>				
+				</div>
+				<div class="modal-body">
+					<p>.................................</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" type="button" data-dismiss="modal">close</button>
+					<button class="btn btn-primary" type="button">submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h1>声明式用法</h1>
+	<p>使用data-toggle="modal"和data-target=""</p>
+	<button type="button" data-toggle="modal" data-target="#myModal">button</button>
+	<div class="modal " id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">modal-title</h4>				
+				</div>
+				<div class="modal-body">
+					<p>.................................</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" type="button" data-dismiss="modal">close</button>
+					<button class="btn btn-primary" type="button">submit</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<h2>js用法</h2>
+	<button class="button1" type="button">button</button>
+	<script type="text/javascript">
+		$(function () {
+			$(".button1").click(function() {
+				$("#myModal").modal({
+					backdrop:true,
+					keyboard:fasle
+				});
+			});
+		})
+	</script>
+</div>
+</body>
+</html>
