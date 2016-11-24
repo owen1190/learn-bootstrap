@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tooltip</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<style type="text/css">
+		body {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		.tooltip-wrap {
+			display: inline-block;
+		}
+		.tooltip-wrap .btn[disabled] {
+			pointer-events: none;
+		}
+		.tooltip-wrap.disabled {
+			cursor: not-allowed;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>工具条用法</h1>
+	<p>因为性能问题，所以需要使用JavaScript来初始化。</p>
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+	<h2>给disabled或.disabled元素添加tooltips</h2>
+	<p>.disabled需要div元素包裹来实现，disabled可以直接在需要实现tooltip元素上直接实现。</p>
+	<div  title="disabled Tooltip " class="disabled  tooltip-wrap">
+		<button type="button"  class="btn btn-default "    disabled=""  >button disabled</button>		
+	</div>
+
+	<button type="button" class="btn btn-default disabled"  data-toggle="tooltip" data-placement="bottom" title="button .disabled">button .disabled</button>
+	
+	
+
+</div>
+<mark>给.btn-group和.input-group内元素上应用使用tooltip时，需要指定container:'body'选项</mark>
+<br>
+<mark>不要给隐藏元素设置工具条效果</mark>
+<script type="text/javascript">
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
+		$('.tooltip-wrap').tooltip();
+	});
+</script>
+
+</body>
+</html>

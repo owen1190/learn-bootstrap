@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<style type="text/css">
+		body {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+		div[data-toggle] {
+			display: inline-block;
+		}
+		div[data-toggle] .btn[disabled] {
+			pointer-events: none;
+		}
+		div[data-toggle] .disabled {
+			cursor: not-allowed;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>弹出框</h1>
+	<p>与提示框用法相似，要设置data-toggle="popover",然后通过JavaScript来实现效果。</p>
+	<button class="btn btn-default" type="button" data-toggle="popover" data-original-title="A title" data-content="And here's some amazing content. It's very engaging. Right?" data-placement="top">button</button>
+	<h2>给disabled或.disabled添加弹出框</h2>	
+	<p>.disabled需要div元素包裹来实现，disabled可以直接在需要实现效果元素上直接实现。</p>
+	<button class="btn  disabled" type="button" data-toggle="popover" data-original-title="A title" data-content="And here's some amazing content. It's very engaging. Right?" data-placement="bottom">disable</button>
+	
+	<div class="disabled" data-toggle="popover" data-original-title="a title" data-content="And here's some amazing content. It's very engaging. Right?">
+		<button class="btn btn-default " disabled type="button">button</button>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$('[data-toggle="popover"]').popover();
+	});
+</script>
+</body>
+</html>
