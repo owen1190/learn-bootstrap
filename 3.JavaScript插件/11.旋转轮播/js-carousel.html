@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+		body {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	</style>
+</head>
+<body>
+<h1>JS用法</h1>
+<p>使用函数carousel()来开启轮播</p>
+<div  class="slide carousel jsusage" id="carousel-container">
+		<div class="carousel-inner">
+			<div class="item">
+				<img src="file:///C:/Users/Public/Pictures/Sample%20Pictures/1368.jpg">
+				<div class="carousel-caption">
+					<h3>imag1</h3>
+					<p>.......</p>
+				</div>
+			</div>
+			<div class="item active">
+				<img src="file:///C:/Users/Public/Pictures/Sample%20Pictures/139-1501140Z400.jpg">
+				<div class="carousel-caption">
+					<h3>imag2</h3>
+					<p>.......</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="file:///D:/downloads/f424db14e7e3852ae1c22cd25acbcaf3.jpg">
+				<div class="carousel-caption">
+					<h3>imag3</h3>
+					<p>.......</p>
+				</div>
+			</div>
+		</div>
+		<ol class="carousel-indicators">
+			<li data-slide-to="0" data-target="#carousel-container"></li>
+			<li data-slide-to="1" data-target="#carousel-container"></li>
+			<li data-slide-to="2" data-target="#carousel-container"></li>
+		</ol>
+		<a href="#carousel-container" data-slide="prev" class="left carousel-control">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#carousel-container" data-slide="next" class="right carousel-control">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+	<script type="text/javascript">
+		$(function () {
+			$(".jsusage").carousel();
+		})
+	</script>
+</body>
+</html>

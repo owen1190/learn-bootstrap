@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+		body {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>单个折叠</h1>
+	<p>触发元素应添加.collapsed样式(该插件所对应的折叠区域是隐藏的)，添加data-toggle="collapse"以及表示折叠区域的data-target=""</p>
+	<p>折叠区域显示设定为collapse in ，隐藏设定为collapse</p>
+	<button class="btn btn-default " data-toggle="collapse" data-target="#showDemo" >触发元素（显示区域）</button>
+	<div id="showDemo" class="collapse in "><p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p></div>
+	<button class="btn btn-default collapsed" data-toggle="collapse" data-target="#hideDemo">触发元素（隐藏区域）</button>
+	<div id="hideDemo" class="collapse"><p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p></div>
+	<h1>手风琴效果</h1>
+	<p>使用panel的panel-title作为触发元素，包裹panel-body的div元素作为折叠区域</p>
+	<p>使用一个panel-group包含多个panel</p>
+	<p>每个panel里的触发元素都要指定data-parent属性，值为panel-group样式元素的选择符</p>
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading" >
+				<h4 class="panel-title">
+					<a href="#collapseOne" data-parent="#accordion" data-toggle="collapse">Title One</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse in" >
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">Title Two</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse " id="collapseTwo">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">Title Three</a>
+				</h4>
+			</div>
+			<div class="panel-collapse collapse" id="collapseThree">
+				<div class="panel-body">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2>对于list-group的手风琴效果</h2>
+      	 <button class="btn btn-default collapsed" data-toggle="collapse" data-target=".list-group">触发元素</button>
+      	 <ul class="list-group collapse"   >
+      	 	<li class="list-group-item">Cras justo odio</li>
+      	 	<li class="list-group-item">Dapibus ac facilisis in</li>
+      	 	<li class="list-group-item">Morbi leo risus</li>
+      	 </ul>      
+</div>
+</body>
+</html>
