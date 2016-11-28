@@ -57,7 +57,7 @@
 			<button type="submit" class="btn btn-default">Submit</button>
 	</form>
 	<h1>水平排列的表单</h1>
-	<p></p>
+	<p>通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了。</p>
 	<form class="form-horizontal">
 		<div class="form-group">
 			<label for="exampleInputEmail1" class="col-lg-2">Email address</label>
@@ -93,8 +93,8 @@
 	<h2>文本域</h2>
 	<p>.rows可定义高度，.cols定义宽度。但如果应用了.form-control时，则cols属性不起作用</p>
 	<div>
-		<textarea class="form-control" cols="1" rows="3" placeholder="应用.form-control"></textarea> 
-		<textarea cols="1"  rows="3"></textarea> 
+		<textarea class="form-control" cols="1" rows="3" placeholder="应用.form-control" placeholder="应用了form-control"></textarea> 
+		<textarea cols="1"  rows="3" placeholder="未应用了form-control"></textarea> 
 	</div>
 	<h2>单选和多选</h2>
 	<h3>内联单选和多选框</h3>
